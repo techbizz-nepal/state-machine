@@ -9,7 +9,7 @@ class BaseInvoiceStateContract implements InterfaceInvoiceStateContract
 {
     const DEFAULT_MSG = "action not defined";
 
-    public function __construct(protected Invoice $model)
+    public function __construct(protected Invoice $invoice)
     {
     }
 

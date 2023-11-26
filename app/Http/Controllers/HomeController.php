@@ -22,7 +22,8 @@ class HomeController extends Controller
 //        $model->status = 'open';
 
 //        dd($model->state()->pay());
-        dd($model->state()->finalize());
+        $model->state()->finalize();
+        return $model->status;
     }
 
     /**
